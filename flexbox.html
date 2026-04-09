@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Tarjeta de Perfil</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: sans-serif;
+      background: #959494;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .tarjeta{
+      background:white;
+      width:600px;
+      padding:26px;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0, 0, 0, 0.545);
+      display:flex;
+      flex-direction:column;
+      gap: 15px;
+    }
+
+    .perfil-header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+    }
+
+    .perfil-header img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit: cover;
+    }
+
+    .nombre_perfil{
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+    }
+
+    .nombre{
+      font-weight:bold;
+      font-size: 20px;
+    }
+
+    .usuario{
+      color: #383737;
+      font-size:13px;
+    }
+
+
+    .bio{
+      font-size: 15px;
+      color:#575454;
+      margin-top: 10px;
+    }
+
+    .estadisticas{
+      display:flex;
+      justify-content:space-between;
+    }
+
+    .estadis{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      flex:1;
+    }
+
+    .num_Est{
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    .etiqueta{
+      font-size:12px;
+      color:rgb(68, 66, 66);
+    }
+
+    .botones{
+      display:flex;
+      gap:10px;
+    }
+
+    .botones button{
+      flex:1;
+      padding:10px;
+      border-radius:13px;
+      border:none;
+      cursor:pointer;
+      font-weight:bold;
+      margin-bottom: 10px;
+    }
+
+    .seguir{
+      background:#3d33eb;
+      color:white;
+    }
+
+    .mensaje{
+      background:#e5e2e2;
+    }
+
+    .miniaturas{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .miniaturas img{
+      width:150px;
+      height:110px;
+      object-fit:cover;
+      border-radius:8px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="tarjeta">
+    
+    <!-- Sección superior: avatar + nombre -->
+    <div class="perfil-header">
+      <img src="https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png" alt="">
+
+      <div class="nombre_perfil">
+        <span class="nombre">Tomás Martínez Tangarife</span>
+        <span class="usuario">@Tomi2108</span>
+
+        <p class="bio">
+          Soy una persona apasionada por los estudios. Me gusta mucho leer, ver películas y comer. 
+        </p>
+
+      </div>
+
+    </div>
+
+    <hr>
+    
+    <!-- Estadísticas -->
+    <div class="estadisticas">
+        <div class="estadis">
+            <span class="num_Est">280</span>
+            <span class="etiqueta">Post</span>
+        </div>
+
+        <div class="estadis">
+            <span class="num_Est">1200</span>
+            <span class="etiqueta">Seguidores</span>
+        </div>
+
+        <div class="estadis">
+            <span class="num_Est">500</span>
+            <span class="etiqueta">Seguidos</span>
+        </div>
+    </div>
+    
+    <!-- Botones -->
+    <div class="botones">
+      <button class="seguir">Seguir</button>
+      <button class="mensaje">Mensaje</button>
+    </div>
+    
+    <!-- Miniaturas de proyectos -->
+    <div class="miniaturas">
+        
+        <img src="https://centromedicoabc.com/wp-content/uploads/2024/08/Medico-neurocirujano-con-equipo-robotico.webp" alt="">
+        <img src="https://img2.rtve.es/n/2237471" alt="">
+        <img src="https://xperiencia.com.co/wp-content/uploads/2025/02/pasadia-paracaidismo-en-flandes-tolima-Xperiencia-04-1024x572.webp" alt="">
+        <img src="https://cca.edu.mx/wp-content/uploads/2024/06/vacaciones.jpg" alt="">
+
+    </div>
+    
+  </div>
+
+</body>
+</html>
